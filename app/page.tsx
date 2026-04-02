@@ -1,10 +1,24 @@
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import InfoCards from "@/components/InfoCards";
+import Services from "@/components/Services";
+import Skills from "@/components/Skills";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import Projects from "@/components/Projects";
+
 export default function Home() {
     return (
-        <main className="flex flex-col items-center justify-center h-screen">
-            <h1 className="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
-            <p className="text-lg text-gray-600 mb-8">
-                Hi, I'm Mregrag! I'm a software developer specializing in web development and design.
-            </p>
+        <main className="bg-[#0b0b0b] text-white min-h-screen">
+            <Navbar />
+            <Hero />
+            <Services />
+            <Skills />
+            <Projects />
+            <Contact />
+            <InfoCards />
+            <Footer />
         </main>
     );
 }
