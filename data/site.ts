@@ -7,7 +7,7 @@ export const siteConfig = {
     phone: "+212635253691",
     location: "Larache, Morocco",
     github: "https://github.com/mregrag",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/mohamed-regrag-1337/",
     cv: "/cv.pdf",
     image: "/profile.jpg",
 };

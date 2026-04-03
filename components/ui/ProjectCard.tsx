@@ -6,13 +6,7 @@ type ProjectCardProps = {
     link?: string;
 };
 
-export default function ProjectCard({
-    title,
-    description,
-    tech,
-    status,
-    link,
-}: ProjectCardProps) {
+export default function ProjectCard({ title, description, tech, status, link, }: ProjectCardProps) {
     return (
         <article className="group rounded-2xl border border-[#1d1d1d] bg-[#111111] p-6 transition duration-300 hover:-translate-y-1 hover:border-green-500/50 hover:shadow-[0_0_30px_rgba(34,197,94,0.08)]">
             <div className="mb-4 flex items-start justify-between gap-4">

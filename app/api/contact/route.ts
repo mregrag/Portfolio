@@ -13,12 +13,6 @@ export async function POST(req: Request) {
             );
         }
 
-        if (!process.env.RESEND_API_KEY) {
-            return Response.json(
-                { error: "Missing RESEND_API_KEY." },
-                { status: 500 }
-            );
-        }
 
         if (!process.env.CONTACT_TO_EMAIL) {
             return Response.json(

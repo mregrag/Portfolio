@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mohamed Regrag — Portfolio
 
-## Getting Started
+A modern and responsive personal portfolio built with **Next.js**, **TypeScript**, and **Tailwind CSS** to showcase my background, skills, and projects from **1337 / 42 Network**.
 
-First, run the development server:
+## Overview
+
+This project is my personal portfolio website. It highlights who I am, the technologies I work with, the projects I built, and the best ways to contact me.
+
+The goal of this portfolio is to present my work in a clean, simple, and professional way while keeping the codebase well structured and easy to maintain.
+
+## Features
+
+- Modern responsive design
+- Built with Next.js App Router
+- Clean component-based architecture
+- Static portfolio data stored in dedicated data files
+- Projects section for 42 / personal work
+- Skills and services sections
+- Contact form with backend email support
+- Downloadable CV
+- Reusable UI structure for future updates
+
+## Tech Stack
+
+- **Framework:** Next.js
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Icons:** React Icons / Lucide React
+- **Email handling:** Next.js API Route
+- **Deployment:** Vercel
+
+## Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+app/
+  api/
+    contact/
+      route.ts
+  layout.tsx
+  page.tsx
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+components/
+  layout/
+    Footer.tsx
+    Navbar.tsx
+  sections/
+    About.tsx
+    Contact.tsx
+    Hero.tsx
+    InfoCards.tsx
+    Projects.tsx
+    Services.tsx
+    Skills.tsx
+  ui/
+    ProjectCard.tsx
+    SectionHeading.tsx
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+data/
+  projects.ts
+  services.ts
+  site.ts
+  skills.ts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+lib/
+  utils.ts
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+public/
+  cv.pdf
+  profile.jpg

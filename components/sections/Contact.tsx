@@ -1,20 +1,15 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { useState } from "react";
 import { Mail, Send, User, MessageSquare } from "lucide-react";
 
 export default function Contact() {
-    const [form, setForm] = useState({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-    });
+    const [form, setForm] = useState({ name: "", email: "", subject: "", message: "", });
 
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
     const [feedback, setFeedback] = useState("");
 
-    async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
         setStatus("loading");
         setFeedback("");
@@ -36,17 +31,9 @@ export default function Contact() {
 
             setStatus("success");
             setFeedback("Your message has been sent successfully.");
-            setForm({
-                name: "",
-                email: "",
-                subject: "",
-                message: "",
-            });
+            setForm({ name: "", email: "", subject: "", message: "", });
         } catch (error) {
-            const message =
-                error instanceof Error
-                    ? error.message
-                    : "Failed to send your message. Please try again.";
+            const message = error instanceof Error ? error.message : "Failed to send your message. Please try again.";
 
             setStatus("error");
             setFeedback(message);
@@ -126,12 +113,7 @@ export default function Contact() {
                     <div className="flex flex-col gap-4 border-t border-white/5 pt-4 sm:flex-row sm:items-center sm:justify-between">
                         <p
                             className={`text-sm ${status === "success"
-                                ? "text-green-400"
-                                : status === "error"
-                                    ? "text-red-400"
-                                    : "text-gray-500"
-                                }`}
-                        >
+                                ? "text-green-400" : status === "error" ? "text-red-400" : "text-gray-500"}`} >
                             {feedback || "I usually reply as soon as possible."}
                         </p>
 

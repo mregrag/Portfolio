@@ -7,8 +7,8 @@ export default function Navbar() {
     const [open, setOpen] = useState(false);
 
     const links = [
-        { name: "About me", href: "#about" },
         { name: "Services", href: "#services" },
+        { name: "Skills", href: "#skills" },
         { name: "Projects", href: "#projects" },
         { name: "Contact me", href: "#contact" },
     ];
@@ -25,11 +25,7 @@ export default function Navbar() {
                         <li key={link.href}>
                             <a
                                 href={link.href}
-                                className={`text-sm transition ${link.name === "Contact me"
-                                    ? "rounded-full border border-green-500/30 px-4 py-2 text-green-400 hover:bg-green-500 hover:text-black"
-                                    : "text-gray-300 hover:text-green-400"
-                                    }`}
-                            >
+                                className={`text-sm transition ${link.name === "Contact me" ? "rounded-full border border-green-500/30 px-4 py-2 text-green-400 hover:bg-green-500 hover:text-black" : "text-gray-300 hover:text-green-400"}`} >
                                 {link.name}
                             </a>
                         </li>
@@ -39,8 +35,7 @@ export default function Navbar() {
                 <button
                     type="button"
                     onClick={() => setOpen(!open)}
-                    className="text-white md:hidden"
-                >
+                    className="text-white md:hidden" >
                     {open ? <X size={24} /> : <Menu size={24} />}
                 </button>
             </nav>
@@ -53,8 +48,7 @@ export default function Navbar() {
                                 <a
                                     href={link.href}
                                     onClick={() => setOpen(false)}
-                                    className="block py-3 text-sm text-gray-300 transition hover:text-green-400"
-                                >
+                                    className="block py-3 text-sm text-gray-300 transition hover:text-green-400" >
                                     {link.name}
                                 </a>
                             </li>

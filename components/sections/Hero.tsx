@@ -5,8 +5,7 @@ export default function Hero() {
     return (
         <section
             id="home"
-            className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-16 md:grid-cols-2 md:py-24"
-        >
+            className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-16 md:grid-cols-2 md:py-24" >
             <div className="space-y-6">
                 <div>
                     <p className="text-sm font-medium uppercase tracking-[0.3em] text-green-400">
@@ -31,15 +30,13 @@ export default function Hero() {
                         href={siteConfig.cv}
                         target="_blank"
                         rel="noreferrer"
-                        className="rounded-full bg-green-500 px-5 py-3 text-sm font-medium text-black transition hover:bg-green-400"
-                    >
+                        className="rounded-full bg-green-500 px-5 py-3 text-sm font-medium text-black transition hover:bg-green-400" >
                         Download CV
                     </a>
 
                     <a
                         href="#projects"
-                        className="rounded-full border border-gray-700 px-5 py-3 text-sm font-medium text-white transition hover:border-green-400 hover:text-green-400"
-                    >
+                        className="rounded-full border border-gray-700 px-5 py-3 text-sm font-medium text-white transition hover:border-green-400 hover:text-green-400" >
                         View Projects
                     </a>
                 </div>
@@ -52,8 +49,7 @@ export default function Hero() {
                         alt={`${siteConfig.name} profile image`}
                         fill
                         className="object-cover"
-                        priority
-                    />
+                        priority />
                 </div>
             </div>
         </section>
