@@ -8,9 +8,6 @@ export default function Hero() {
             className="mx-auto grid max-w-6xl items-center gap-12 px-6 py-16 md:grid-cols-2 md:py-24" >
             <div className="space-y-6">
                 <div>
-                    <p className="text-sm font-medium uppercase tracking-[0.3em] text-green-400">
-                        {siteConfig.location}
-                    </p>
 
                     <h1 className="mt-4 text-4xl font-bold leading-tight md:text-6xl">
                         Hi, I am
